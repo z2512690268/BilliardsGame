@@ -14,7 +14,7 @@
 
 #include "imgui.h"
 
-#include "SXJUI.h"
+#include "UI.h"
 
 double windowWidth;
 double windowHeight;
@@ -32,7 +32,9 @@ void Main()
     windowWidth = GetWindowWidth();
     windowHeight = GetWindowHeight();
     
-    registerMouseEvent(MouseEventProcess); 
+//  registerMouseEvent(MouseEventProcess); 
+
+	ZKY_Debug();
 }
 
 void MouseEventProcess(int x, int y, int button, int event)
